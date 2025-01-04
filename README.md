@@ -4,6 +4,9 @@ Reference sheet for building SFML 3.
 More specifically, those are the settings I had to use for my own premake5 script when building SFML 3 and its dependencies.  
 This is intended for developpers using other build systems than CMake for their projects.  
 
+NOTE: Those settings have only been tested on Windows with Visual Studio.  
+I may update this sheet with notes concerning linux builds if I have the opportunity to test my settings on a linux setup.
+
 # Target Versions
 
 List of all libraries used as submodules.
@@ -43,7 +46,18 @@ List of all libraries used as submodules.
 
 ## Ogg
 
-No specific Define required.
+No specific Defines required.
+
+Includes :
+```
+Ogg/include
+```
+
+Sources :
+```
+Ogg/src/**.h
+Ogg/src/**.c
+```
 
 ## Flac
 
@@ -53,6 +67,24 @@ No specific Define required.
 | CPU_IS_BIG_ENDIAN=0 | - |  |
 | FLAC__HAS_OGG=1 | - |  |
 | PACKAGE_VERSION=\"\" | - |  |
+
+Includes :
+```
+Flac/include
+Flac/src/libFLAC/include
+Ogg/include
+```
+
+Sources :
+```
+Flac/src/libFLAC/**.c
+Flac/src/share/win_utf8_io/**.c
+```
+
+Excluded Sources :
+```
+Flac/src/libFLAC/deduplication/**
+```
 
 ## Vorbis
 
