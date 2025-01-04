@@ -1,4 +1,4 @@
-# SFML Build Reference
+# SFML 3 Build Reference
 Reference sheet for building SFML 3.  
 
 More specifically, those are the settings I had to use for my own premake5 script when building SFML 3 and its dependencies.  
