@@ -23,8 +23,17 @@ List of all libraries used as submodules.
 | Define | Platform | Description |
 |---|---|---|
 | SFML_STATIC | - | Specify if SFML is used as a static lib instead of a dynamic lib. |
+| MA_NO_MP3 | - | Disable unused miniaudio features. |
+| MA_NO_FLAC | - | Disable unused miniaudio features. |
+| MA_NO_ENCODING | - | Disable unused miniaudio features. |
+| MA_NO_RESOURCE_MANAGER | - | Disable unused miniaudio features. |
+| MA_NO_GENERATION | - | Disable unused miniaudio features. |
+| MA_USE_STDINT | - | Use standard fixed-width integer types. |
+| STBI_FAILURE_USERMSG | - |  |
+| SFML_IS_BIG_ENDIAN=0 | - |  |
 | FT2_BUILD_LIBRARY | - | Used for consistency with freetype settings (Optional ?). |
-| TODO | TODO | TODO |
+| FLAC__NO_DLL | - |  |
+| OV_EXCLUDE_STATIC_CALLBACKS | - |  |
 
 ## Freetype
 
@@ -34,18 +43,19 @@ List of all libraries used as submodules.
 
 ## Ogg
 
-| Define | Platform | Description |
-|---|---|---|
-| TODO | TODO | TODO |
+No specific Define required.
 
 ## Flac
 
 | Define | Platform | Description |
 |---|---|---|
-| TODO | TODO | TODO |
+| FLAC__NO_DLL | - |  |
+| CPU_IS_BIG_ENDIAN=0 | - |  |
+| FLAC__HAS_OGG=1 | - |  |
+| PACKAGE_VERSION=\"\" | - |  |
 
 ## Vorbis
 
 | Define | Platform | Description |
 |---|---|---|
-| TODO | TODO | TODO |
+| OV_EXCLUDE_STATIC_CALLBACKS | - |  |
