@@ -40,10 +40,42 @@ List of all libraries used as submodules.
 
 Includes :
 ```
+SFML/include
+SFML/src
+SFML/extlibs/headers/glad/include
+SFML/extlibs/headers/mingw
+SFML/extlibs/headers/miniaudio
+SFML/extlibs/headers/minimp3
+SFML/extlibs/headers/stb_image
+SFML/extlibs/headers/vulkan
+Freetype/include
+Ogg/include
+Flac/include
+Vorbis/include
 ```
 
 Sources :
 ```
+SFML/include/**.hpp
+SFML/include/**.inl
+SFML/src/**.hpp
+SFML/src/**.cpp
+```
+
+Excluded Sources :
+```
+SFML/Main/MainAndroid.cpp
+SFML/Network/Unix/**
+SFML/System/Android/**
+SFML/System/Unix/**
+SFML/Window/Android/**
+SFML/Window/DRM/**
+SFML/Window/FreeBSD/**
+SFML/Window/iOS/**
+SFML/Window/macOS/**
+SFML/Window/NetBSD/**
+SFML/Window/OpenBSD/**
+SFML/Window/Unix/**
 ```
 
 ## Freetype
@@ -138,7 +170,7 @@ Ogg/include
 Sources :
 ```
 Flac/src/libFLAC/**.c
-Flac/src/share/win_utf8_io/**.c
+Flac/src/share/win_utf8_io/**.c [Windows]
 ```
 
 Excluded Sources :
