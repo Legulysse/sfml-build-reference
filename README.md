@@ -62,7 +62,7 @@ SFML/src/**.hpp
 SFML/src/**.cpp
 ```
 
-Excluded Sources :
+Excluded Sources [Windows] :
 ```
 SFML/Main/MainAndroid.cpp
 SFML/Network/Unix/**
