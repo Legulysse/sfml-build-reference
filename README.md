@@ -38,11 +38,71 @@ List of all libraries used as submodules.
 | FLAC__NO_DLL | - |  |
 | OV_EXCLUDE_STATIC_CALLBACKS | - |  |
 
+Includes :
+```
+```
+
+Sources :
+```
+```
+
 ## Freetype
 
 | Define | Platform | Description |
 |---|---|---|
 | FT2_BUILD_LIBRARY | - | Specify to Freetype that it is built as a library. |
+
+Includes :
+```
+Freetype/include
+```
+
+Sources :
+```
+Freetype/src/autofit/autofit.c
+Freetype/src/base/ftbase.c
+Freetype/src/base/ftbbox.c
+Freetype/src/base/ftbdf.c
+Freetype/src/base/ftbitmap.c
+Freetype/src/base/ftcid.c
+Freetype/src/base/ftfstype.c
+Freetype/src/base/ftgasp.c
+Freetype/src/base/ftglyph.c
+Freetype/src/base/ftgxval.c
+Freetype/src/base/ftinit.c
+Freetype/src/base/ftmm.c
+Freetype/src/base/ftotval.c
+Freetype/src/base/ftpatent.c
+Freetype/src/base/ftpfr.c
+Freetype/src/base/ftstroke.c
+Freetype/src/base/ftsynth.c
+Freetype/src/base/fttype1.c
+Freetype/src/base/ftwinfnt.c
+Freetype/src/bdf/bdf.c
+Freetype/src/bzip2/ftbzip2.c
+Freetype/src/cache/ftcache.c
+Freetype/src/cff/cff.c
+Freetype/src/cid/type1cid.c
+Freetype/src/gzip/ftgzip.c
+Freetype/src/lzw/ftlzw.c
+Freetype/src/pcf/pcf.c
+Freetype/src/pfr/pfr.c
+Freetype/src/psaux/psaux.c
+Freetype/src/pshinter/pshinter.c
+Freetype/src/psnames/psnames.c
+Freetype/src/raster/raster.c
+Freetype/src/sdf/sdf.c
+Freetype/src/sfnt/sfnt.c
+Freetype/src/smooth/smooth.c
+Freetype/src/svg/svg.c
+Freetype/src/truetype/truetype.c
+Freetype/src/type1/type1.c
+Freetype/src/type42/type42.c
+Freetype/src/winfonts/winfnt.c
+
+Freetype/builds/windows/ftsystem.c [Windows]
+Freetype/builds/windows/ftdebug.c [Windows]
+```
 
 ## Ogg
 
@@ -91,3 +151,56 @@ Flac/src/libFLAC/deduplication/**
 | Define | Platform | Description |
 |---|---|---|
 | OV_EXCLUDE_STATIC_CALLBACKS | - |  |
+
+Includes :
+```
+Vorbis/include
+Ogg/include
+```
+
+Sources :
+```
+Vorbis/lib/envelope.h
+Vorbis/lib/lpc.h
+Vorbis/lib/lsp.h
+Vorbis/lib/codebook.h
+Vorbis/lib/misc.h
+Vorbis/lib/psy.h
+Vorbis/lib/masking.h
+Vorbis/lib/os.h
+Vorbis/lib/mdct.h
+Vorbis/lib/smallft.h
+Vorbis/lib/highlevel.h
+Vorbis/lib/registry.h
+Vorbis/lib/scales.h
+Vorbis/lib/window.h
+Vorbis/lib/lookup.h
+Vorbis/lib/lookup_data.h
+Vorbis/lib/codec_internal.h
+Vorbis/lib/backends.h
+Vorbis/lib/bitrate.h
+
+Vorbis/lib/mdct.c
+Vorbis/lib/smallft.c
+Vorbis/lib/block.c
+Vorbis/lib/envelope.c
+Vorbis/lib/window.c
+Vorbis/lib/lsp.c
+Vorbis/lib/lpc.c
+Vorbis/lib/analysis.c
+Vorbis/lib/synthesis.c
+Vorbis/lib/psy.c
+Vorbis/lib/info.c
+Vorbis/lib/floor1.c
+Vorbis/lib/floor0.c
+Vorbis/lib/res0.c
+Vorbis/lib/mapping0.c
+Vorbis/lib/registry.c
+Vorbis/lib/codebook.c
+Vorbis/lib/sharedbook.c
+Vorbis/lib/lookup.c
+Vorbis/lib/bitrate.c
+
+Vorbis/lib/vorbisfile.c
+Vorbis/lib/vorbisenc.c
+```
