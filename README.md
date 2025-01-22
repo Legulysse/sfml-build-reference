@@ -19,7 +19,25 @@ List of all libraries used as submodules.
 | Flac | 1.4.3 | https://github.com/xiph/flac.git |
 | Vorbis | 1.3.7 | https://github.com/xiph/vorbis.git |
 
+# Link Settings
+
+## Application (Windows)
+
+List of all target libraries to use for the linker settings, in addition to the binaries built for sfml, freetype, ogg, flac and vorbis.
+
+| Target | Needed for |
+|---|---|
+| legacy_stdio_definitions | fix: error LNK2019: unresolved external symbol _sprintf |
+| opengl32 | sfml-window, sfml-graphics |
+| gdi32 | sfml-window |
+| winmm | sfml-system, sfml-window |
+| ws2_32 | sfml-network |
+
 # Build Settings
+
+## Common settings
+
+- Use C++17 as language standard.
 
 ## SFML
 
