@@ -21,7 +21,7 @@ List of all libraries used as submodules.
 
 # Link Settings
 
-## Application (Windows)
+## Application [Windows]
 
 List of all target libraries to use for the linker settings, in addition to the binaries built for sfml, freetype, ogg, flac and vorbis.
 
