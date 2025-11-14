@@ -54,7 +54,7 @@ List of all target libraries to use for the linker settings, in addition to the 
 | SFML_IS_BIG_ENDIAN=0 | - |  |
 | FT2_BUILD_LIBRARY | - | Used for consistency with freetype settings (Optional ?). |
 | FLAC__NO_DLL | - |  |
-| OV_EXCLUDE_STATIC_CALLBACKS | - |  |
+| OV_EXCLUDE_STATIC_CALLBACKS | - | Avoid unused symbol warnings from static callbacks (Vorbis). |
 
 Includes :
 ```
