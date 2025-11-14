@@ -13,7 +13,7 @@ List of all libraries used as submodules.
 
 | Library | Version | Repository |
 |---|---|---|
-| SFML | 3.0.0 | https://github.com/SFML/SFML.git |
+| SFML | 3.0.2 | https://github.com/SFML/SFML.git |
 | Freetype | 2.13.2 | https://github.com/freetype/freetype.git |
 | Ogg | 1.3.5 | https://github.com/xiph/ogg.git|
 | Flac | 1.4.3 | https://github.com/xiph/flac.git |
@@ -198,9 +198,7 @@ Flac/src/libFLAC/deduplication/**
 
 ## Vorbis
 
-| Define | Platform | Description |
-|---|---|---|
-| OV_EXCLUDE_STATIC_CALLBACKS | - |  |
+No specific Defines required.
 
 Includes :
 ```
